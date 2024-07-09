@@ -1,0 +1,1261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .nav-item {
+            margin-top: px;
+            display: flex;
+            margin: 12px;
+        }
+        
+        .nav-item svg {
+            margin-top: 9px;
+        }
+        
+        .form-control {
+            width: 350px;
+        }
+        
+        .row {
+            border: 1px solid wheat;
+            box-shadow: 10px 10px whitesmoke;
+        }
+        
+        .card {
+            margin-bottom: 50px;
+        }
+        
+        .card-img-top {
+            display: flex;
+            background-color: aqua;
+            width: 150px;
+            height: 130px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .navbar-brand {
+            text-align: center;
+        }
+        
+        .card-img-t {
+            margin: 10px;
+        }
+        
+        .card-title {
+            font-size: 18px;
+        }
+        
+        .sort-item {
+            display: inline-block;
+        }
+        
+        .mobile-title li {
+            list-style: none;
+        }
+        
+        .sort-item li {
+            display: inline-block;
+            list-style: none;
+            margin: 5px;
+            padding: 5px;
+        }
+        
+        .ruppe {
+            font-size: 25px;
+        }
+        
+        .offer-price {
+            font-size: 17px;
+            color: seagreen;
+        }
+        
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 15px;
+            width: 100%;
+            height: auto;
+            padding-top: 80px;
+            background-color: #172337;
+            color: white;
+            /* justify-content: space-around; */
+        }
+        
+        .footer h3 {
+            font-size: 19px;
+        }
+        
+        .footer li {
+            list-style: none;
+        }
+        
+        li.social {
+            display: flex;
+        }
+        
+        i.social ul li {
+            width: 95px;
+        }
+        
+        .card-title {
+            color: seagreen;
+        }
+        
+        .card:hover {
+            background-color: whitesmoke;
+            transition: ease-in-out;
+        }
+        
+        .card-img-top-4,
+        .card-img-top {
+            width: 180px !important;
+            height: 220px !important;
+            background-color: aqua;
+            mix-blend-mode: darken !important;
+        }
+        
+        .card-img-top-3 {
+            width: auto;
+            height: auto;
+        }
+        
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 15px;
+            width: 100%;
+            background-color: #212121;
+            color: white;
+            /* justify-content: space-around; */
+        }
+        
+        .footer h3 {
+            font-size: 19px;
+        }
+        
+        .footer li {
+            list-style: none;
+        }
+        
+        li.social {
+            display: flex;
+        }
+        
+        i.social ul li {
+            width: 95px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary" style="position:sticky; top: 0; width: 100%; z-index: 1;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder=" Search for Products, Brands and More" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
+
+                    </ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 220px; color: white; ">
+
+                        <li class="nav-item dropdown">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                          </svg>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Login
+                          </a>
+                            <ul class="dropdown-menu" style="color: white;">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                            <a class="nav-link active" aria-current="page" href="#" style="color: white;">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                            <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z"/>
+                          </svg> <a class="nav-link" href="#" style="color: white;">Become a Seller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Example single danger button -->
+                    <div class="btn-group" style="">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px ;font-weight: 400;">
+                            Electronic
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group" style="">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px ;font-weight: 400;">
+                            Tvs & Appliance
+    </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <!-- Example single danger button -->
+                    <div class="btn-group" style="">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px ;font-weight: 400;">
+        Men
+    </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <!-- Example single danger button -->
+                    <div class="btn-group" style="">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px ;font-weight: 400;">
+        Women
+    </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <!-- Example single danger button -->
+                    <div class="btn-group" style="">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px ;font-weight: 400;">
+        Baby & Kids
+    </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <!-- Example single danger button -->
+                    <div class="btn-group" style="">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px ;font-weight: 400;">
+        Home & Furniture
+    </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group" style="">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px ;font-weight: 400;">
+        Sports,Books& More
+    </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group" style="">
+
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px ;font-weight: 400;">
+        Flights
+    </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group" style="">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px ;font-weight: 500;">
+        Offer Zone
+    </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- SLIDER -->
+
+
+
+        <div class="container-fluid" style="margin-top: 20px;">
+            <div class="row">
+                <div class="col" style="border: 2px solid wheat; box-shadow: 10px 10px whitesmoke;">
+
+                    <h5>Filter</h5>
+                    <h6>CATEGORIES</h6>
+
+                    <!-- Default dropstart button -->
+                    <div class="btn-group dropstart">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropstart
+      </button>
+                        <ul class="dropdown-menu">
+                            Headphones earphone
+                        </ul>
+                    </div>
+                    <br>
+
+
+                    <label for="customRange2" class="form-label"><strong>Price</strong></label>
+                    <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                    <div class="btn-group">
+                        <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 120px; border: 1px solid;">
+        Min
+      </button>
+                        <ul class="dropdown-menu">
+                            ...
+                        </ul>
+                    </div>
+                    <span>to</span>
+                    <div class="btn-group">
+                        <button class="btn btn-light btn-sm" type="button" style="width: 120px; border: 1px solid;">
+        $10000+
+      </button>
+                        <button type="button" class="btn btn-sm btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" style="border: 1px solid;">
+        <span class="visually-hidden"></span>
+      </button>
+                        <ul class="dropdown-menu">
+                            ...
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <!-- Split dropstart button -->
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            HEADPHONE TYPE
+                          </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="btn-group-vertical" style="margin-top: 15px;">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                    In the Ear
+                    </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                    on the  Ear
+                    </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                    True Wireless
+                    </label>
+                                        </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <br>
+                                <hr> </div>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            CONNECTIVITY
+                          </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                            In the Ear
+                          </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                            on the  Ear
+                          </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                            True Wireless
+                          </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                            Checked checkbox
+                          </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    CUSTOMER RATING
+                          </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="btn-group-vertical" style="margin-top: 15px;">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                    In the Ear
+                                                                  </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                    on the  Ear
+                                                                  </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                    True Wireless
+                                                                  </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                    Checked checkbox
+                                                                  </label>
+                                        </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <br>
+                                <hr> </div>
+                        </div>
+                    </div>
+                    <!-- problem -->
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                                  Brand
+                        </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="btn-group-vertical" style="margin-top: 15px;">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                  In the Ear
+                                                                </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                  on the  Ear
+                                                                </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                  True Wireless
+                                                                </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                  Checked checkbox
+                                                                </label>
+                                        </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <br>
+                                <hr> </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                HEADPHONE DESIGN
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="btn-group-vertical" style="margin-top: 15px;">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                In the Ear
+                                                              </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                on the  Ear
+                                                              </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                True Wireless
+                                                              </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Checked checkbox
+                                                              </label>
+                                        </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <br>
+                                <hr> </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                COLOR                            </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="btn-group-vertical" style="margin-top: 15px;">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              In the Ear
+                                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              on the  Ear
+                                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              True Wireless
+                                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              Checked checkbox
+                                                            </label>
+                                        </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <br>
+                                <hr> </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSix">
+                              OFFER                            </button>
+                            </h2>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="btn-group-vertical" style="margin-top: 15px;">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                            In the Ear
+                                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                            on the  Ear
+                                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                            True Wireless
+                                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                            Checked checkbox
+                                                          </label>
+                                        </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <br>
+                                <hr> </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                              AVAILABILITY                            </button>
+                            </h2>
+                            <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="btn-group-vertical" style="margin-top: 15px;">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                            In the Ear
+                                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                            on the  Ear
+                                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                            True Wireless
+                                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                            Checked checkbox
+                                                          </label>
+                                        </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <br>
+                                <hr> </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                                GST INVOICE AVAILABILITY
+                              </h2>
+                          <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                  <div class="btn-group-vertical" style="margin-top: 15px;">
+                                      <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                          <label class="form-check-label" for="flexCheckChecked">
+                                                            In the Ear
+                                                          </label>
+                                      </div>
+                                      <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                          <label class="form-check-label" for="flexCheckChecked">
+                                                            on the  Ear
+                                                          </label>
+                                      </div>
+                                      <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                          <label class="form-check-label" for="flexCheckChecked">
+                                                            True Wireless
+                                                          </label>
+                                      </div>
+                                      <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                          <label class="form-check-label" for="flexCheckChecked">
+                                                            Checked checkbox
+                                                          </label>
+                                      </div>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <br>
+                              <hr> </div>
+                      </div>
+                  </div>
+
+
+
+                
+
+                  <!--  -->
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                              COMPATIBLE WITH
+                            </button>
+                            </h2>
+                            <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="btn-group-vertical" style="margin-top: 15px;">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                          In the Ear
+                                                        </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                          on the  Ear
+                                                        </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                          True Wireless
+                                                        </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                          Checked checkbox
+                                                        </label>
+                                        </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <br>
+                                <hr> </div>
+                        </div>
+                    </div>
+                    <!-- close all slide div -->
+                </div>
+
+
+                <div class="col-sm-9">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                        <ul class="mobile-title">
+                            <li>Mobile</li>
+                        </ul>
+                        <ul class="sort-item">
+                            <li>
+                                <h3>sort by</h3>
+                            </li>
+                            <li>Popularity</li>
+                            <li>Price-Low to High</li>
+                            <li>Price-High to Low</li>
+                            <li> Newest First</li>
+                        </ul>
+                    </nav>
+                    <!--  -->
+
+                    <header>
+                        <!-- place navbar here -->
+                    </header>
+                    <main>
+                        <div class="container">
+                            <div class="row" style="border-top: 1px solid; border-bottom: 1px solid; padding: 30px;">
+                                <div class="col">
+                                    <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/monitor/4/h/5/-original-imagxpgpcnpyqmyj.jpeg?q=70" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <h4>Acer 23.8 inch Full HD IPS Panel with-Visioncare, VGA, HDMI, Ergonomic Stand, Flicker-Free Monitor(MON-0062-White)</h4>
+                                    <button style="background-color: green; color: white;">4.2 <img src="https://cdn-icons-png.flaticon.com/128/1828/1828970.png" width="25px"  alt=""></button> <span> <small>6,335 Rating & 634 Reviews  </small>  </span>
+                                    <ul>
+                                        <li>Panel Type: IPS Panel</li>
+                                        <li>Screen Resoltion Type:Full HD</li>
+                                        <li>HDMI </li>
+                                        <li>Brightness: 250 nits</li>
+                                        <li>Response Time: ms| Refresh Rate:75 Hz </li>
+                                        <li>HDMI Ports-1</li>
+                                        <li>3 Year Warranty</li>
+                                    </ul>
+
+
+                                </div>
+                                <div class="col" style="line-height: 0.7;">
+                                    <p> <b>&#x20B9; 6,999</b></p>
+                                    <p> <del>&#x20B9; 13,999</del> 70% off </p>
+                                    <p>Free delivery</p>
+                                    <p style="color: green; font-weight: 700;">Save extra with combo offers Bank Offer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container" style="margin-top: 20px; ">
+                            <div class="row" style="border-bottom: 1px solid; padding: 30px;">
+                                <div class="col">
+                                    <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=70" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <h4>Acer 21.5 inch Full HD IPS Panel with sRGB 99%, ENERGY STAR Certified, VESA Supportive, VGA, HDMI, Erg...</h4>
+                                    <button style="background-color: green; color: white;">4.2 <img src="https://cdn-icons-png.flaticon.com/128/1828/1828970.png" width="25px"  alt=""></button> <span> <small>6,335 Rating & 634 Reviews  </small>  </span>
+                                    <br>
+                                    <br>
+                                    <ul>
+
+                                        <li>Panel Type: IPS Panel</li>
+                                        <li>Screen Resoltion Type:Full HD</li>
+                                        <li>HDMI </li>
+                                        <li>Brightness: 250 nits</li>
+                                        <li>Response Time: ms| Refresh Rate:100 Hz </li>
+                                        <li>HDMI Ports-1</li>
+                                        <li>3 Year Warranty</li>
+                                    </ul>
+
+
+                                </div>
+                                <div class="col" style="line-height: 0.7;">
+                                    <p> <b>&#x20B9; 5,999</b></p>
+                                    <p> <del>&#x20B9; 7,999</del> 7% off </p>
+                                    <p>Free delivery</p>
+                                    <p style="color: green; font-weight: 700;">Save extra with combo offers Bank Offer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card 3 -->
+                        <div class="container" style="margin-top: 20px; padding: 30px; border-bottom: 1px solid;">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/monitor/k/l/b/-original-imagsgh8zzgbu2tf.jpeg?q=70" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <h4>SAMSUNG 24 inch Full HD LED Backlit IPS Panel with 3-Sided Borderless Display, Game & Free Sync Mode, ...</h4>
+                                    <button style="background-color: green; color: white;">4.2 <img src="https://cdn-icons-png.flaticon.com/128/1828/1828970.png" width="25px"  alt=""></button> <span> <small>6,335 Rating & 634 Reviews  </small>  </span>
+                                    <br>
+                                    <br>
+                                    <ul>
+                                        <li>Panel Type: IPS Panel</li>
+                                        <li>Screen Resoltion Type:Full HD</li>
+                                        <li>HDMI </li>
+                                        <li>Brightness: 250 nits</li>
+                                        <li>Response Time: ms| Refresh Rate:100 Hz </li>
+                                        <li>HDMI Ports-1</li>
+                                        <li>3 Year Warranty</li>
+                                    </ul>
+
+
+                                </div>
+                                <div class="col" style="line-height: 0.7; ">
+                                    <p> <b>&#x20B9; 7,999</b></p>
+                                    <p> <del>&#x20B9; 9,999</del> 7% off </p>
+                                    <p>Free delivery</p>
+                                    <p style="color: green; font-weight: 700;">Save extra with combo offers Bank Offer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 4 -->
+                        <div class="container" style="margin-top: 20px; padding: 30px; border-bottom: 1px solid;">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/monitor/b/a/z/mon-0062-white-full-hd-24-2023-mon-0062w-frontech-original-imagzx3dnkgtghpp.jpeg?q=70" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <h4>Frontech Ultima Series 24 inch Full HD LED Backlit IPS Panel Monitor (MON-0062-White)</h4>
+                                    <button style="background-color: green; color: white;">4.2 <img src="https://cdn-icons-png.flaticon.com/128/1828/1828970.png" width="25px"  alt=""></button> <span> <small>6,335 Rating & 634 Reviews  </small>  </span>
+                                    <br>
+                                    <br>
+                                    <ul>
+                                        <li>Panel Type: IPS Panel</li>
+                                        <li>Screen Resoltion Type:Full HD</li>
+                                        <li>HDMI </li>
+                                        <li>Brightness: 250 nits</li>
+                                        <li>Response Time: ms| Refresh Rate:100 Hz </li>
+                                        <li>HDMI Ports-1</li>
+                                        <li>3 Year Warranty</li>
+                                    </ul>
+
+
+                                </div>
+                                <div class="col" style="line-height: 0.7;">
+                                    <p> <b>&#x20B9; 6,999</b></p>
+                                    <p> <del>&#x20B9; 10,999</del> 7% off </p>
+                                    <p>Free delivery</p>
+                                    <p style="color: green; font-weight: 700;">Save extra with combo offers Bank Offer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 5 -->
+                        <div class="container" style="margin-top: 20px; padding: 30px; border-bottom: 1px solid;">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/monitor/w/g/l/-original-imagwmfcskgf7jj9.jpeg?q=70" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <h4>ViewSonic 27 inch Quad HD IPS Panel With HDR10,137 sRGB, Height Adj7ustment, Swivel, Tilt, Pivot,Eye ...</h4>
+                                    <button style="background-color: green; color: white;">4.2 <img src="https://cdn-icons-png.flaticon.com/128/1828/1828970.png" width="25px"  alt=""></button> <span> <small>6,335 Rating & 634 Reviews  </small>  </span>
+                                    <br>
+                                    <br>
+                                    <ul>
+                                        <li>Panel Type: IPS Panel</li>
+                                        <li>Screen Resoltion Type:Full HD</li>
+                                        <li>HDMI </li>
+                                        <li>Brightness: 250 nits</li>
+                                        <li>Response Time: ms| Refresh Rate:170 Hz </li>
+                                        <li>HDMI Ports-1</li>
+                                        <li>3 Year Warranty</li>
+                                    </ul>
+
+
+                                </div>
+                                <div class="col" style="line-height: 0.7;">
+                                    <p> <b>&#x20B9; 6,999</b></p>
+                                    <p> <del>&#x20B9; 10,999</del> 7% off </p>
+                                    <p>Free delivery</p>
+                                    <p style="color: green; font-weight: 700;">Save extra with combo offers Bank Offer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 6-->
+                        <div class="container" style="margin-top: 20px; padding: 30px; border-bottom: 1px solid;">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="https://rukminim2.flixcart.com/image/312/312/ko8xtow0/monitor/t/a/y/d24-20-66aekac1in-lenovo-original-imag2qwzazcdmqtb.jpeg?q=70" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <h4>Lenovo 23.8 inch Full HD VA Panel 3-Side Near Edgeless with TUV Eye Care Monitor (D24-20/D24-40)</h4>
+                                    <button style="background-color: green; color: white;">4.2 <img src="https://cdn-icons-png.flaticon.com/128/1828/1828970.png" width="25px"  alt=""></button> <span> <small>6,335 Rating & 634 Reviews  </small>  </span>
+                                    <br>
+                                    <br>
+                                    <ul>
+                                        <li>Panel Type: IPS Panel</li>
+                                        <li>Screen Resoltion Type:Full HD</li>
+                                        <li>HDMI </li>
+                                        <li>Brightness: 250 nits</li>
+                                        <li>Response Time: ms| Refresh Rate:170 Hz </li>
+                                        <li>HDMI Ports-1</li>
+                                        <li>3 Year Warranty</li>
+                                    </ul>
+
+
+                                </div>
+                                <div class="col" style="line-height: 0.7;">
+                                    <p> <b>&#x20B9; 6,999</b></p>
+                                    <p> <del>&#x20B9; 10,999</del> 7% off </p>
+                                    <p>Free delivery</p>
+                                    <p style="color: green; font-weight: 700;">Save extra with combo offers Bank Offer</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+
+                </main>
+
+
+                <!-- check -->
+
+                <footer>
+                    <!-- place footer here -->
+                    <div class="container-fluid">
+                        <div class="row" style="border: 1px solid rgba(0, 0, 0, 0.283); margin-top: 30px;">
+                            <div class="col">
+
+                                <div>
+                                    <p></p>
+                                    <h2>Shop for the Best Computer Monitors Online</h2>
+                                    <div><br></div>
+                                    <div>In today’s market, you can find monitors that are Full HD, 4K, HD Ready, and different display types such as Plasma, LED, LCD, and many other varieties. Thus, you have a multitude of options to choose from. And, it
+                                        is imperative to choose a good quality monitor as it will not only provide you with great clarity (so that you get an immersive experience every time), but will also protect your eyes from damage even after extended
+                                        use.&nbsp;
+                                    </div>
+                                    <div><br></div>
+                                    <div>Popular brands such as <a href="/computers/monitors/samsung~brand/pr?sid=6bo,9no">Samsung</a>, <a href="/computers/monitors/lg~brand/pr?sid=6bo,9no">LG</a>, <a href="/computers/monitors/hp~brand/pr?sid=6bo,9no">HP</a>,
+                                        <a href="/computers/monitors/dell~brand/pr?sid=6bo,9no">Dell</a>, Acer, Lenovo, BenQ and more pay heed to important factors such as resolution, panel type, screen size, TFT classification, and so on so that the
+                                        device stays in good shape for a long time, and to give you quality entertainment. You can find monitors priced differently according to their different features. If you invest in a good quality computer monitor,
+                                        you’ll get to enjoy a better experience while surfing the Web, gaming, watching movies, working on assignments and projects, and more.&nbsp;</div>
+                                    <div><br></div>
+                                    <div>And, since purchasing these devices can be considered as an investment, it’s of crucial importance for you to do your research before you jump into making a decision. So, let’s discuss some of the pointers that can
+                                        help you when you choose to buy computer monitors online.&nbsp;</div>
+                                    <div><br></div>
+                                    <div><b>The nature of your work&nbsp;</b></div>
+                                    <div><br></div>
+                                    <div>Firstly, you have to decide the nature of the tasks that you’re purchasing the device for. For example, if you want to buy one for office/college work, web browsing, and other simpler tasks, you can opt for a simple
+                                        monitor. It could be a flat screen one with an LED display (and without fancy specs) as you don’t expect to carry out high-intensity tasks on it.&nbsp;</div>
+                                    <div><br></div>
+                                    <div>But, if you’re looking for a device to play graphics-rich games, edit videos, and images, then you can opt for devices that feature larger screens. If your budget allows it, you can choose a model that offers 4K resolution,
+                                        editing tools, and so on. You can also opt for models that have thin bezels to elevate the look of your room.&nbsp;</div>
+                                    <div><br></div>
+                                    <div><b>Screen size and resolution&nbsp;</b></div>
+                                    <div><br></div>
+                                    <div>The placement of your monitor can also influence your purchasing decision. If you usually place the device in a normal viewing distance then you can opt for a 60.9 cm monitor. You can easily find gaming monitors in
+                                        this size (or around it) as gamers tend to sit close to the screen. You can choose to buy options such as Asus 60.96 cm Full HD LED gaming monitor, BenQ 54.61 cm LCD, and more. And, if you’re more interested in
+                                        graphic designing and editing, then you can opt for 81 cm monitors and more so that you can clearly view your work.&nbsp;</div>
+                                    <div><br></div>
+                                    <div><b>Display Type and Other Features&nbsp;</b></div>
+                                    <div><br></div>
+                                    <div>The most popular options today are LCD and LED monitors as they create less strain on the viewer’s eyes and they also consume less power compared to older versions. TFT (Thin Film Transistor) screens are also popular
+                                        options. Other than these options, you can consider HDMI monitors and touchscreen monitors as well.&nbsp;</div>
+                                    <div><br></div>
+                                    <div><b>Shop for Monitors Online&nbsp;</b></div>
+                                    <div><br></div>
+                                    <div>You can sit in the comfort of your home and shop for a variety of devices such as the LG 47 cm LED-backlit monitor, HP 54.61 cm Full HD LED-backlit IPS Panel monitor, Samsung 59.944 cm curved Full HD LED backlit monitor,
+                                        and more online.&nbsp;</div>
+                                    <div><br></div>
+                                    <div>By shopping online, you can go through the images, specifications, product descriptions, customer reviews, buying guides, and so on to help you make a purchasing decision. And, the best part is that you can take all
+                                        the time you need to do so - without feeling rushed or watched.&nbsp;</div>
+                                    <div><br></div>
+                                    <div>Shopping online saves you the trouble of going out to buy things that you can easily find at the click of a few buttons. This way, you get to save yourself from pollution, hair/skin damage, stress, fatigue, crowds,
+                                        long queues at checkout counters, and so on. And, the best part about shopping online is that you get your orders delivered to your doorstep. Happy shopping!&nbsp;</div>
+                                    <div><br></div>
+                                    <p></p>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="footer">
+                <ul>
+                    <h3>About</h3>
+
+                    <li>About us </li>
+                    <li>contact us</li>
+                    <li>careers</li>
+                    <li>Flipkart Stories</li>
+                    <li>Press</li>
+                    <li>Corporate Information</li>
+                </ul>
+
+
+                <ul>
+                    <h3>GROUP COMPANIES</h3>
+                    <li>Myntra </li>
+                    <li>Flipkart Wholesale</li>
+                    <li>Cleartrip</li>
+                    <li> Shopsy</li>
+                    <li>Press</li>
+                    <li>Corporate Information</li>
+                </ul>
+                <ul>
+                    <h3>HELP</h3>
+                    <li>Payment </li>
+                    <li>Shipping</li>
+                    <li>Cancellation & Return</li>
+                    <li>FAQ</li>
+                    <li>Report infringement </li>
+                </ul>
+                <ul>
+                    <h3>CONSUMER POLICY</h3>
+                    <li>Cancellation & Returns </li>
+                    <li>Term of Use </li>
+                    <li>Security</li>
+                    <li>Privacy</li>
+                    <li>Sitemap</li>
+                    <li> Grievance Redressal</li>
+                    <li>EPR Compliance</li>
+                </ul>
+                <ul style="    border-left: 1px solid white; margin: 10px;">
+                    <h3>Mail Us:</h3>
+                    <li>Flipkart Internet Private limited, </li>
+                    <li>Buildings Alyssa,Begonia &</li>
+                    <li>Clove Embassy Tech Village,</li>
+                    <li> Outer Ring Road, Devarabeesanahalli Village,</li>
+                    <li>Bengaluru,560103,</li>
+                    <li>Karnataka,India</li>
+                    <ul class="social">
+                        <h3>Social:</h3>
+                        <i class="bi bi-facebook" style="margin: 5px"></i>
+
+                        <i class="bi bi-twitter-x" style="margin: 5px"></i>
+                        <i class="bi bi-whatsapp" style="margin: 5px"></i> </ul>
+
+                </ul>
+
+                <ul>
+                    <h3>Registered Office Address:</h3>
+                    <li>Flipkart Internet Private Limited, </li>
+                    <li>Buildings Alyssa, Begonia &</li>
+                    <li>Clove Embassy Tech Village,</li>
+                    <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+                    <li>Bengaluru,560103,</li>
+                    <li>Karnataka,India</li>
+                    <li>CIN: U51109KA2012PTC066107</li>
+                    <li>Telephone:044-5556-8985-5455</li>
+                    <li>Corporate Information</li>
+                </ul>
+                <div class="container-fluid" style=" color: white;">
+                    <div class="row">
+                        <div class="col" style=" color: white;">
+                            <i class="bi bi-shop"></i> Become a seller
+                        </div>
+                        <div class="col" style=" color: white;">
+                            <i class="bi bi-stars"></i> Advertise
+                        </div>
+                        <div class="col" style=" color: white;">
+                            <i class="bi bi-gift"></i> Gift Card
+                        </div>
+                        <div class="col" style=" color: white;">
+                            <i class="bi bi-question-circle"></i> Help Center
+                        </div>
+                        <div class="col" style=" color: white;">
+                            &#169;2007 to 2024 flipkart.com
+                        </div>
+
+                        <div class="col" style=" color: white; mix-blend-mode: lighten;">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAgCAMAAABq4atUAAAApVBMVEX3nhvrABv/////XwD+8fLtGjLsDSbtJDv/+fHzKA/+VwLuLkTwQlb7zYn+7dX94uXrBR/83KvxHhL9cAf94rv3pCv+aQT82KP6iBH95sT4n6nxUGL1go/7zNH5vmb4r0T4qzv5tE7yXW72jZn0c4H4p7D/9eb+6ev3YUb81JruDhb7ewzzZ3f7TQX5jxT3oSP3lhj5srruKT/2NQv4bFH6vmf+8d0ofNcMAAABMUlEQVQ4jZ2V6XaCMBCFhyRCrMpSwaVWFKtW7GJbte//aG0KQuxMwpH7i5PDdyZzMwuwSuJh1uuErtd/nFdnMkoXCSTLbODXPzK4fASr0KnkPQl1Nk2h1jL6D4m1hii5G7bN4FqZfwU99xykHWBFGjTvYOaeDwlqUEEByXCSyktIfGFmz5VeCCouoFfMOG9/EH/HUCIVFBBMt2D4iE4L2IqA7kqITzB0kAyEJRAdasxgY85I6QNDKQPqdjVD3w+IWthrEOW6D4aHvYh64Bjc26FxE0TaB16b6/XbGEFVnt1ykPBJQPbHzX5rj3DCXkZ5m4LdqtYIMdTYGmxtDkUEKprw1naXU+Ng6ZpKyDrCjnxE2J03DMvTARunD8t2Y1klNmtYAIsYbw3TqjmXq+ZbWzU/CLUYCqjQWk0AAAAASUVORK5CYII="
+                                width="25px" alt="">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAA2CAMAAABTGy/EAAAArlBMVEX////RMCjLAAAAOW0AO2789/b58O7RKyPQJh3z9vfQ2N4AMmoANGsAQXIASHVqhp72397txMLlravilpXbfXrYaGLTTUfQNy7LHA7mtLLw1NLcjInYa2fOQDrKLCLOOjPhpaHfm5bvzMr26OjTWFPTYFrm7O6Xp7dhe5lCZ4lRcI6ntcO0wMuasMCNoLJ9lKoAKGYiVn4AHFwAEVvCzNQAAFIAGWDg1dY2XoO7tr6b/19/AAAB10lEQVRIie2UfXObIBzHiU8RFDBZmhrTrEnTooCV4Njm3v8bG2p61zZJ0zX7pz0/5ynily+/Bw8ABgYGBj4tvu9/fHGQTKbfZlfz69TpCeezxT/5+dl0ebMK0++3q/l8NQodJw1HLeMwdabvtFisN8vN4i7ZPts6yKZXznjU42zPuiTZ5O6kKrgP90bBu0J6g9vOJ11e6gOWbUjh/cU+4MFWKf0PPplj6zM79ZXlBRfy5VxOGYDoSVBQe5elfNyk49Otr6IYFw19OakUyHfF/qWMNICatfY318l+0pSvfGSEVft8xPWPSDEilEsM0pxi4lG++1ljU3kUaNOKfv22N9gGeWjUENzvwEDpEnsh6RLpcoBdAxEEhVcVnkRRJyKVBlKXQDF+kJkmbreF4qLBIncrgGKtPAUjF0qhhfYM8Uzep14jUYKCcQjwgZFNDdOi0jYt4eY2ITvMeVyamJg6QgjHKIpY1RmhmDU2LMSNYofFRrQhpCx5oxSXDVZNkwPBmeQUUNtNzg0XwZ8uAm47Z/VS9oV6A7irjykWo6RQENIKCAQqlTdMoiOy50bl615Ytg/tr2NyadOx65Gx4yOZnWW9+cCiQ7L1xSdGiz85f4INDAwMfDn+Ah/bLO46mHidAAAAAElFTkSuQmCC"
+                                width="25px" alt="">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAANCAMAAAAjb+gZAAAAjVBMVEX///8AAAC7u7v09PTf39/T0tLb29uMi4sAccfn5+cResoAdskAbMX7+/v4+PgDeMkzMTF6qNrT4fKamZmgn59YldM0hc7DwsK2tbVsa2tHRUWsq6tkY2OlpaXG2O4PCgqZu+Ld5/SvyOc/PT3w9fpWVFS70OuJsN58e3tEjNAZFRVOTU3o7/huoNcoJSVRNIEvAAABbklEQVQokaVS2XKDMAy0AGObw5BwuYFcpAkhLf3/z6slO5Oh07fsiyXvzo5XFmNv4Jy0bdv4hgcIE4eGU9+ZHA9tAseHxAe99koLRzSjLIoibUl+AYc8goG5ixAPARDhqTz/QVcEQ7olu8nUQhafjPVw5QjFIlRa7Mgmh9L1Aqootsix7Kkk2UbK2wYxTRNSnQ+3tqmhG0DZ4g78OQvxKtk2S+SBqrmZx5XNrq6qqi7JBoBxuNuigqHCa4U2970FjWYrnzZZIU8rmyMlf6DNHmrGyFCXfiKKCSf4+mOTpGubIQ/DMKdQDwg6Lug5TCGE9RUQaKvQLlSarWyCf2Zj3AOO7tMQBqrVbL6XzXL2NjaUgUuP4CubH+js78UChN8rO+8eP41WjGRjszQW80Gms20HHz187k0J2sCVSg2gY8+Xr72piJwyu3yFvGUztYq7xdHcLQTnLOY+TMxV5Oj4peQ+2ikjm4S9iRFTHXDiv7d7Fze10k7cAAAAAElFTkSuQmCC"
+                                alt="">
+                            <img src="https://cdn.visa.com/v2/assets/images/logos/visa/blue/logo.png" width="25px" alt="">
+
+                            <img src="data:image/png;base64,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"
+                                width="25px" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--  -->
+    </header>
+
+
+
+
+
+
+
+
+    </footer <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+<!--  -->
